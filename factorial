@@ -1,0 +1,16 @@
+#Вычислить факториал числа
+
+def factorial(n):
+    if n == 0:
+        return 1
+    if n < 1:
+        return "Факториал отрицательного числа не существет" 
+    else:
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+        return result
+
+# Пример использования
+num = int(input ("Введите число:"))
+print(f"{num}! = {factorial(num)}")
