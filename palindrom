@@ -1,0 +1,11 @@
+#проверка на палиндром
+
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")  # Удаляем пробелы и приводим к нижнему регистру
+    return s == s[::-1]
+string = input ("Введите стороку:")
+
+if is_palindrome(string):
+    print(f" '{string}' — Это палиндром!")
+else:
+    print(f" '{string}' — Это не палиндром.")
